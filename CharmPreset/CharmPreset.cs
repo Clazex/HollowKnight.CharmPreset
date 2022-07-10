@@ -20,5 +20,7 @@ public sealed partial class CharmPreset : Mod {
 		}
 
 		Instance = this;
+
+		OsmiHooks.AfterEnterSaveHook += BuildGUI;
 	}
 }
